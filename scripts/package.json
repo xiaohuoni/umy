@@ -1,0 +1,8 @@
+{
+  "name": "umy-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "umy-scripts": "bin/umy-scripts.js"
+  }
+}
