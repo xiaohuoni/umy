@@ -11,8 +11,7 @@
     "skipLibCheck": true,
     "target": "esnext",
     "jsx": "preserve",
-    "paths": {
-    }
+    "paths": {}
   },
   "exclude": [
     "**/node_modules",

@@ -1,0 +1,19 @@
+{
+  "name": "@example/boilerplate",
+  "private": true,
+  "scripts": {
+    "build": "alita build",
+    "build-analyze": "ANALYZE=1 alita build",
+    "dev": "alita dev",
+    "preview": "alita preview",
+    "setup": "alita setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "alita": "^3.3.8",
+    "umy": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45"
+  }
+}

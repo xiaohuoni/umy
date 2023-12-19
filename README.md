@@ -1,5 +1,3 @@
 # umy
 
-设想着是一个完全兼容 umi 所有约定的 node 后端服务
-
-> 我对后端一无所知，找了半天没找到能用的后端框架，如果你知道更好的方案，请告诉我。我懒得写 ( 0 0 )
+[stylex](https://github.com/facebook/stylex) + [material design 3](https://github.com/material-components/material-web)

@@ -19,7 +19,7 @@
     "turbo:clean": "rimraf .turbo"
   },
   "lint-staged": {
-    "*.{jsx,less,md,json}": [
+    "*.{jsx,md,json}": [
       "prettier --no-error-on-unmatched-pattern --cache --write"
     ],
     "*.ts?(x)": [
@@ -34,6 +34,8 @@
     "@types/jest": "^27.5.1",
     "@types/node": "^17.0.35",
     "@types/qrcode-terminal": "*",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
     "@types/resolve": "^1.20.2",
     "@types/rimraf": "3.0.2",
     "@umijs/utils": "4.0.78",
@@ -44,10 +46,14 @@
     "gh-pages": "^6.1.0",
     "git-repo-info": "^2.1.1",
     "husky": "^7.0.4",
-    "umy-scripts": "workspace:*",
     "lerna": "^6.5.1",
     "lint-staged": "^12.3.7",
     "matcher": "^5.0.0",
+    "prettier": "^2.8.4",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-packagejson": "^2.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "resolve": "^1.22.0",
     "rimraf": "^3.0.2",
     "synccnpm": "^1.1.3",
@@ -57,6 +63,7 @@
     "typescript": "^4.7.2",
     "uglify-js": "^3.15.4",
     "umi": "4.0.78",
+    "umy-scripts": "workspace:*",
     "yorkie": "^2.0.0",
     "zx": "^7.2.0"
   },

@@ -2,6 +2,13 @@
   "name": "@umy/preset-umy",
   "version": "0.0.1",
   "description": "@umy/preset-umy",
+  "homepage": "https://github.com/xiaohuoni/umy/tree/master/packages/preset-umy#readme",
+  "bugs": "https://github.com/xiaohuoni/umy/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuoni/umy"
+  },
+  "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -12,17 +19,10 @@
     "build:deps": "umy-scripts bundleDeps",
     "dev": "umy-scripts father dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xiaohuoni/umy"
+  "publishConfig": {
+    "access": "public"
   },
   "authors": [
     "xiaohuoni <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)"
-  ],
-  "license": "MIT",
-  "bugs": "https://github.com/xiaohuoni/umy/issues",
-  "homepage": "https://github.com/xiaohuoni/umy/tree/master/packages/preset-umy#readme",
-  "publishConfig": {
-    "access": "public"
-  }
+  ]
 }

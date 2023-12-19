@@ -2,27 +2,35 @@
   "name": "umy",
   "version": "0.0.1",
   "description": "umy",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/xiaohuoni/umy/tree/master/packages/umy#readme",
+  "bugs": "https://github.com/xiaohuoni/umy/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuoni/umy"
+  },
+  "license": "MIT",
+  "main": "es/index.js",
+  "types": "es/index.d.ts",
   "files": [
-    "dist"
+    "es"
   ],
   "scripts": {
     "build": "umy-scripts father build",
     "build:deps": "umy-scripts bundleDeps",
     "dev": "umy-scripts father dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xiaohuoni/umy"
+  "dependencies": {
+    "@material/react-ripple": "^0.15.0",
+    "@material/web": "^1.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.6",
+    "react-dom": ">=16.8.6"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "authors": [
     "xiaohuoni <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)"
-  ],
-  "license": "MIT",
-  "bugs": "https://github.com/xiaohuoni/umy/issues",
-  "homepage": "https://github.com/xiaohuoni/umy/tree/master/packages/umy#readme",
-  "publishConfig": {
-    "access": "public"
-  }
+  ]
 }
