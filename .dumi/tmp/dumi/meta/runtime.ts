@@ -6,7 +6,11 @@ import deepmerge from '/Users/congxiaochen/Documents/umy/node_modules/.pnpm/deep
 export const patchRoutes = ({ routes }) => {
   Object.values(routes).forEach((route) => {
     if (filesMeta[route.id]) {
-      if (process.env.NODE_ENV === 'production' && (route.meta?.frontmatter?.debug || filesMeta[route.id].frontmatter.debug)) {
+      if (
+        process.env.NODE_ENV === 'production' &&
+        (route.meta?.frontmatter?.debug ||
+          filesMeta[route.id].frontmatter.debug)
+      ) {
         // hide route in production which set hide frontmatter
         delete routes[route.id];
       } else {
@@ -19,13 +23,13 @@ export const patchRoutes = ({ routes }) => {
             frontmatter: { title: tabs[id].title },
             toc: [],
             texts: [],
-          }
+          };
           return {
             ...tabs[id],
             meta: filesMeta[id] || meta,
-          }
+          };
         });
       }
     }
   });
-}
+};

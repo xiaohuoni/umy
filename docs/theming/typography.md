@@ -53,62 +53,6 @@ Plain    | `--md-ref-typeface-plain`
 *   [All tokens](https://github.com/material-components/material-web/blob/main/tokens/_md-ref-typeface.scss)
     <!-- {.external} -->
 
-
-```html---
-name: Typography
-title: Typography
-order: 3
----
-
-# Typography
-
-<!-- go/mwc-typography -->
-
-<!--*
-# Document freshness: For more information, see go/fresh-source.
-freshness: { owner: 'lizmitchell' reviewed: '2023-09-06' }
-tag: 'docType:howTo'
-*-->
-
-<!-- [TOC] -->
-
-[Typography](https://m3.material.io/styles/typography)<!-- {.external} --> helps make
-writing legible and beautiful.
-
-> Tip: "typeface" and "typescale" can be confusing. "face" refers to
-> `font-family` and `font-weight`.
->
-> "scale" refers to a group of `font-family`, `font-size`, `line-height`, and
-> `font-weight` tokens.
-
-## Typeface
-
-<!-- go/md-ref-typeface -->
-
-A [typeface](https://m3.material.io/styles/typography/fonts)<!-- {.external} --> is a
-`font-family`. In Material there are plain and brand typefaces.
-
-Each typeface has normal, medium, and bold styles (defaults to `400`, `500`, and
-`700`). All three weight styles need to be included for a font.
-
-> Important: if you do not change the typeface, be sure to load the default
-> `'Roboto'` font. For example, from
-> [fonts.google.com](https://fonts.google.com/share?selection.family=Roboto:wght@400;500;700).
-
-### Tokens
-
-Typefaces can be set using
-[CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)<!-- {.external} -->.
-Tokens follow the naming convention `--md-ref-typeface-<token>`.
-
-Typeface | Token
--------- | -------------------------
-Brand    | `--md-ref-typeface-brand`
-Plain    | `--md-ref-typeface-plain`
-
-*   [All tokens](https://github.com/material-components/material-web/blob/main/tokens/_md-ref-typeface.scss)
-    <!-- {.external} -->
-
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;500;700&display=swap');
 

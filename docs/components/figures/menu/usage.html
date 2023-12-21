@@ -26,14 +26,16 @@
       </md-menu>
     </span>
     <script type="module">
-      const anchorEl = document.body.querySelector("#usage-anchor");
-      const menuEl = document.body.querySelector("#usage-menu");
-      anchorEl.addEventListener("click", () => {
+      const anchorEl = document.body.querySelector('#usage-anchor');
+      const menuEl = document.body.querySelector('#usage-menu');
+      anchorEl.addEventListener('click', () => {
         menuEl.open = !menuEl.open;
       });
     </script>
     <span style="position: relative">
-      <md-filled-button id="usage-anchor-2">Set with element ref</md-filled-button>
+      <md-filled-button id="usage-anchor-2"
+        >Set with element ref</md-filled-button
+      >
       <md-menu id="usage-menu-2">
         <md-menu-item>
           <div slot="headline">Apple</div>
@@ -47,10 +49,10 @@
       </md-menu>
     </span>
     <script type="module">
-      const anchorEl = document.body.querySelector("#usage-anchor-2");
-      const menuEl = document.body.querySelector("#usage-menu-2");
+      const anchorEl = document.body.querySelector('#usage-anchor-2');
+      const menuEl = document.body.querySelector('#usage-menu-2');
       menuEl.anchorElement = anchorEl;
-      anchorEl.addEventListener("click", () => {
+      anchorEl.addEventListener('click', () => {
         menuEl.open = !menuEl.open;
       });
     </script>

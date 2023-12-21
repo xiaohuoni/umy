@@ -5,9 +5,15 @@
   >
     <div>
       <div style="margin: 16px">
-        <md-filled-button id="usage-popover-anchor">Open popover menu</md-filled-button>
+        <md-filled-button id="usage-popover-anchor"
+          >Open popover menu</md-filled-button
+        >
       </div>
-      <md-menu positioning="popover" id="usage-popover" anchor="usage-popover-anchor">
+      <md-menu
+        positioning="popover"
+        id="usage-popover"
+        anchor="usage-popover-anchor"
+      >
         <md-menu-item>
           <div slot="headline">Apple</div>
         </md-menu-item>
@@ -20,9 +26,9 @@
       </md-menu>
     </div>
     <script type="module">
-      const anchorEl = document.body.querySelector("#usage-popover-anchor");
-      const menuEl = document.body.querySelector("#usage-popover");
-      anchorEl.addEventListener("click", () => {
+      const anchorEl = document.body.querySelector('#usage-popover-anchor');
+      const menuEl = document.body.querySelector('#usage-popover');
+      anchorEl.addEventListener('click', () => {
         menuEl.open = !menuEl.open;
       });
     </script>

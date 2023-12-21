@@ -1,0 +1,31 @@
+{
+  "name": "@umy/theme",
+  "version": "0.0.1",
+  "description": "@umy/theme",
+  "homepage": "https://github.com/xiaohuoni/umy/tree/master/packages/theme#readme",
+  "bugs": "https://github.com/xiaohuoni/umy/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuoni/umy"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "umy-scripts father build",
+    "build:deps": "umy-scripts bundleDeps",
+    "dev": "umy-scripts father dev"
+  },
+  "dependencies": {
+    "rc-util": "^5.38.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "xiaohuoni <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)"
+  ]
+}
