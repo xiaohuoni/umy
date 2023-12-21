@@ -5,7 +5,9 @@
   >
     <div>
       <div style="margin: 16px">
-        <md-filled-button id="usage-fixed-anchor">Open fixed menu</md-filled-button>
+        <md-filled-button id="usage-fixed-anchor"
+          >Open fixed menu</md-filled-button
+        >
       </div>
       <md-menu positioning="fixed" id="usage-fixed" anchor="usage-fixed-anchor">
         <md-menu-item>
@@ -20,9 +22,9 @@
       </md-menu>
     </div>
     <script type="module">
-      const anchorEl = document.body.querySelector("#usage-fixed-anchor");
-      const menuEl = document.body.querySelector("#usage-fixed");
-      anchorEl.addEventListener("click", () => {
+      const anchorEl = document.body.querySelector('#usage-fixed-anchor');
+      const menuEl = document.body.querySelector('#usage-fixed');
+      anchorEl.addEventListener('click', () => {
         menuEl.open = !menuEl.open;
       });
     </script>

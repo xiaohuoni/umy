@@ -4,7 +4,9 @@
     aria-label="A filled button that says menu with submenus. Interact with the button to interact with a menu that has two sub menus."
   >
     <span style="position: relative">
-      <md-filled-button id="usage-submenu-anchor"> Menu with Submenus </md-filled-button>
+      <md-filled-button id="usage-submenu-anchor">
+        Menu with Submenus
+      </md-filled-button>
       <!-- Note the has-overflow attribute -->
       <md-menu has-overflow id="usage-submenu" anchor="usage-submenu-anchor">
         <md-sub-menu>
@@ -26,19 +28,21 @@
               <md-menu-item slot="item">
                 <div slot="headline">Apples</div>
                 <!-- Arrow icons are helpful affordances -->
-                <md-icon slot="start">
-                  arrow_left
-                </md-icon>
+                <md-icon slot="start"> arrow_left </md-icon>
               </md-menu-item>
               <md-menu slot="menu">
                 <md-menu-item>
                   <div slot="headline">Fuji</div>
                 </md-menu-item>
                 <md-menu-item>
-                  <div slot="headline" style="white-space: nowrap;">Granny Smith</div>
+                  <div slot="headline" style="white-space: nowrap">
+                    Granny Smith
+                  </div>
                 </md-menu-item>
                 <md-menu-item>
-                  <div slot="headline" style="white-space: nowrap;">Red Delicious</div>
+                  <div slot="headline" style="white-space: nowrap">
+                    Red Delicious
+                  </div>
                 </md-menu-item>
               </md-menu>
             </md-sub-menu>
@@ -53,9 +57,9 @@
       </md-menu>
     </span>
     <script type="module">
-      const anchorEl = document.body.querySelector("#usage-submenu-anchor");
-      const menuEl = document.body.querySelector("#usage-submenu");
-      anchorEl.addEventListener("click", () => {
+      const anchorEl = document.body.querySelector('#usage-submenu-anchor');
+      const menuEl = document.body.querySelector('#usage-submenu');
+      anchorEl.addEventListener('click', () => {
         menuEl.open = !menuEl.open;
       });
     </script>

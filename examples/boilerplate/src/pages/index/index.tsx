@@ -9,13 +9,22 @@ import {
   ListItem,
 } from 'umy';
 
-const HomePage = () => {
+import { ThemeProvider, useTheme } from '@umy/theme';
+
+const Home = () => {
+  const { theme, setTheme } = useTheme();
   return (
     <Page>
-      <Header></Header>
+      <Header>{JSON.stringify(theme)}</Header>
       <Content>
-        
-      <Divider></Divider>
+        <FilledButton
+          onClick={() => {
+            setTheme(theme === 'dark' ? 'light' : 'dark');
+          }}
+        >
+          换肤
+        </FilledButton>
+        <Divider></Divider>
 
         <List>
           <ListItem>Fruits</ListItem>
@@ -40,7 +49,7 @@ const HomePage = () => {
             <Icon slot="end">open_in_new</Icon>
           </ListItem>
         </List>
-        
+
         <FilledButton
           href=""
           onClick={() => {
@@ -52,10 +61,19 @@ const HomePage = () => {
         <Checkbox touchTarget="wrapper"></Checkbox>
         <Checkbox touch-target="wrapper" checked></Checkbox>
       </Content>
-      <Footer><Fab aria-label="Edit">
+      <Footer>
+        <Fab aria-label="Edit">
           <Icon slot="icon">edit</Icon>
-        </Fab></Footer>
+        </Fab>
+      </Footer>
     </Page>
+  );
+};
+const HomePage = () => {
+  return (
+    <ThemeProvider>
+      <Home />
+    </ThemeProvider>
   );
 };
 

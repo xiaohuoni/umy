@@ -2,11 +2,11 @@ import { Content, Footer, Header, Page } from '@alita/flow';
 import type { FC } from 'react';
 import {
   Divider,
+  ElevatedButton,
   FilledButton,
   FilledTonalButton,
   OutlinedButton,
   TextButton,
-  ElevatedButton
 } from 'umy';
 interface ButtonPageProps {}
 
@@ -41,7 +41,10 @@ const ButtonPage: FC<ButtonPageProps> = () => {
           </svg>
         </TextButton>
         <h2>Accessibility</h2>
-        <p>Add an aria-label attribute to buttons whose labels need a more descriptive label.</p>
+        <p>
+          Add an aria-label attribute to buttons whose labels need a more
+          descriptive label.
+        </p>
         <ElevatedButton aria-label="Add a new contact">Add</ElevatedButton>
       </Content>
       <Footer></Footer>

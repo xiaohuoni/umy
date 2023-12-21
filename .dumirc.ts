@@ -3,6 +3,6 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   themeConfig: {
     name: 'umy',
-    logo:false
+    logo: false,
   },
 });
